@@ -1,0 +1,8 @@
+# ./docker-compose.yaml
+services:
+  postgres:
+    image: 'postgres:12'
+    env_file:
+      - ./.postgres.env
+    ports:
+      - '5434:5432'
